@@ -14,11 +14,11 @@ class FetchList extends React.Component {
     axios
       .get("http://localhost:5555/api/players")
       .then(res => {
-        console.log(res.data);
+        //console.log(res.data);
         this.setState({
           data: res.data
         });
-        console.log(this.state.data[0]);
+        //console.log(this.state.data[0]);
       })
       .catch(err => {
         console.log(err);
@@ -29,6 +29,7 @@ class FetchList extends React.Component {
     return (
       <div>
         <h1>Title of Page</h1>
+
         {this.state.data.map(player => (
           <DisplayList key={player.id} data={player} />
         ))}

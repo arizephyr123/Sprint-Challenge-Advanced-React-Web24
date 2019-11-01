@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 //custom hook can be reused in any component
 const useDarkMode = () => {
   const [darkMode, setDarkMode] = useState();
-  console.log(darkMode);
+  //console.log(darkMode);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

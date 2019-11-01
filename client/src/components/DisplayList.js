@@ -3,7 +3,16 @@ import React from 'react';
 const DisplayList = props => {
     //console.log(props);
 
-        return(<h2>{props.data.name}</h2>)
+    const formattedRank = rank => {
+        return (rank +1)
+    };
+
+        return(<tr>
+            <th scope="row">{formattedRank(props.data.id)}</th>
+            <td>{props.data.name}</td>
+            <td>{props.data.country}</td>
+            <td>{props.data.searches}</td>
+          </tr>)
     
 };
 

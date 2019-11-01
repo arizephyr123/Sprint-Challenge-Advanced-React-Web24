@@ -6,12 +6,12 @@ import FetchList from "./components/FetchList";
 import useDarkMode from "./hooks/useDarkMode";
 
 function App() {
-  const [toggleDarkMode, applyCSS, saveSetting, setDarkMode] = useDarkMode();
+  const [toggleDarkMode, applyCSS, saveSetting] = useDarkMode();
 
   const handleDarkMode = () => {
     toggleDarkMode();
     applyCSS();
-    saveSetting();
+    //saveSetting();
   };
   return (
     <div className="App">

@@ -1,8 +1,9 @@
 import React from 'react';
 
-const DisplayList =() => {
+const DisplayList = props => {
+    console.log(props);
 
-        return(<h2>results</h2>)
+        return(<h2>{props.data.name}</h2>)
     
 };
 
